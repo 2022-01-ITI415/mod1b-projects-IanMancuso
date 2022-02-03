@@ -15,4 +15,11 @@ using UnityEngine;
             tBasketGO.transform.position = pos;
         }
     }
+    public void AppleDestroyed() {                                           
+        // Destroy all of the falling apples
+        GameObject[] tAppleArray=GameObject.FindGameObjectsWithTag("Apple"); 
+        foreach ( GameObject tGO in tAppleArray ) {
+            Destroy( tGO );
+        }
+    }
 }
