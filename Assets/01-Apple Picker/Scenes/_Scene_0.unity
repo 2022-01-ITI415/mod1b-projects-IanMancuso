@@ -318,6 +318,10 @@ PrefabInstance:
       propertyPath: chanceToChangeDirections
       value: 0.02
       objectReference: {fileID: 0}
+    - target: {fileID: 4064075063702069141, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4444855957613927268, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
       propertyPath: m_Name
       value: AppleTree
