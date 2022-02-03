@@ -31,5 +31,8 @@ using UnityEngine.SceneManagement;
         // Remove the Basket from the list and destroy the GameObject
         basketList.RemoveAt( basketIndex );
         Destroy( tBasketGO );
+        if ( basketList.Count == 0 ) {
+            SceneManager.LoadScene( "_Scene_0" );                              // a
+        }
     }
 }
