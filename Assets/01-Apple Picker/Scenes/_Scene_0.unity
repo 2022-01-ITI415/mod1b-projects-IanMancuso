@@ -268,8 +268,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -306,6 +306,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3981466834148902359, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
+      propertyPath: speed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -3981466834148902359, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
+      propertyPath: leftAndRightEdge
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -3981466834148902359, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
+      propertyPath: chanceToChangeDirections
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 4444855957613927268, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
       propertyPath: m_Name
       value: AppleTree
@@ -320,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4444855957613927269, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4444855957613927269, guid: 6f96b3f43a9a9544585f3d879c2123a5, type: 3}
       propertyPath: m_LocalPosition.z
