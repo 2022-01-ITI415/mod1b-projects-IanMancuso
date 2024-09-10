@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 41938986}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,9 +236,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 41938981}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3085d75801d008d43917e155037dee32, type: 3}
+  m_Script: {fileID: 11500000, guid: d3e302f508271da4ba88d7bbea13cc32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreGT: {fileID: 238799347}
+  score: 0
 --- !u!1 &220445197
 GameObject:
   m_ObjectHideFlags: 0
