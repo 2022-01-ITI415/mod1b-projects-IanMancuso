@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;                                                          
+using UnityEngine.UI;
+using UnityEngine.Events;                                                          
  public enum GameMode {                                                         
     idle, 
     playing,
@@ -45,7 +46,6 @@ using UnityEngine.UI;
         SwitchView("Show Both");
         ProjectileLine.S.Clear();
         // Reset the goal
-        Goal.goalMet = false;
          UpdateGUI();
         mode = GameMode.playing;
     }
@@ -57,16 +57,16 @@ using UnityEngine.UI;
     void Update() {
         UpdateGUI();
          // Check for level end
-        if ( (mode == GameMode.playing) && Goal.goalMet ) {
+        /*if ( (mode == GameMode.playing) && Goal.goalMet ) {
             // Change mode to stop checking for level end
             mode = GameMode.levelEnd;
             // Zoom out
             SwitchView("Show Both");
             // Start the next level in 2 seconds
             Invoke("NextLevel", 2f);
-        }
+        }*/
     }
-    void NextLevel() {
+    public void NextLevel() {
         level++;
         if (level == levelMax) {
             level = 0;
