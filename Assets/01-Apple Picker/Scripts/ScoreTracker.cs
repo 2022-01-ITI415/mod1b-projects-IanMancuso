@@ -25,7 +25,7 @@ public class ScoreTracker : MonoBehaviour
 
     public void UpdateScore()
     {
-        score += score;
+        score += 100;
         scoreGT.text = score.ToString();
     }
 }
