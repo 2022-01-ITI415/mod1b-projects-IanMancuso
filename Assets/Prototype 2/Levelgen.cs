@@ -7,13 +7,12 @@ public class Levelgen : MonoBehaviour
     // Start is called before the first frame update
     public int grid_size = 10;
     public int num_tiles = 10;
-    Vector2() center_tile = Vector2()
-    Dictionary grid = new Dictionary();
-    Vector2() position =  new Vector2();
+    Vector2 center_tile;
+    Dictionary<Vector2,int> grid = new Dictionary<Vector2, int>();
+    Vector2 position;
 
-    Vector2() new_tile = new Vector2();
-    void Start()
-    {
+    Vector2 new_tile;
+    void Start() {
         for( int x = 0; x < grid_size; x++){
             for(int y = 0; y < grid_size; y++){
                 position = Vector2(x,y);
@@ -36,33 +35,37 @@ public class Levelgen : MonoBehaviour
                 
                 case 3:
                     position = Vector2(Random.Range(0,10),9);
+                default:
+                    break;
             }
 
             switch(Random.Range(0,4)){
                 case 0:
                     if (position.y == 9){
-                        position.y -= 1
+                        position.y -= 1;
                     } else {
-                        position.y += 1
+                        position.y += 1;
                     }
                 case 1:
                     if (position.y == 0){
-                        position.y += 1
+                        position.y += 1;
                     } else {
-                        position.y -= 1
+                        position.y -= 1;
                     }
                 case 2:
                     if (position.x == 9){
-                        position.x -= 1
+                        position.x -= 1;
                     } else {
-                        position.x += 1
+                        position.x += 1;
                     }
                 case 3:
                     if (position.x == 0){
-                        position.x += 1
+                        position.x += 1;
                     } else {
-                        position.x -= 1
+                        position.x -= 1;
                     }
+                default:
+                    break;
             }
         }
 
