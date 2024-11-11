@@ -15,6 +15,9 @@ public class Levelgen : MonoBehaviour
     Vector2 position;
     String level = "";
 
+    public GameObject cube;
+    public GameObject player;
+
     Vector2 new_tile;
     void Start() {
         Console.WriteLine("WriteLine");
@@ -106,6 +109,7 @@ public class Levelgen : MonoBehaviour
                 if (grid[new Vector2(row, column)] == 1)
                 {
                     level += "#";
+                    Instantiate(cube, new Vector3(row, 0, column), Quaternion.identity);
                 } else
                 {
                     level += "_";
@@ -115,7 +119,8 @@ public class Levelgen : MonoBehaviour
         }
 
         Debug.Log(level);
-
+        player.transform.position = new Vector3(Mathf.Floor(grid_size/2),1,Mathf.Floor(grid_size/2));
+        transform.position += new Vector3(Mathf.Floor(grid_size/2),0,Mathf.Floor(grid_size/2));
         
 
 
